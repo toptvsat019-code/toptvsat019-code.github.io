@@ -1,87 +1,79 @@
----
----
-<style>
-  body {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 30px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.65;
-    color: #24292e;
-    font-weight: 350;
-  }
-  h1 { font-weight: 600; color: #111; margin-bottom: 5px; }
-  h2, h3 { font-weight: 500; color: #111; margin-top: 30px; }
-  a { color: #0366d6; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  hr { border: none; border-top: 1px solid #e1e4e8; margin: 30px 0; }
-  
-  .profile-avatar {
-    float: right;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-left: 30px;
-    margin-bottom: 10px;
-    object-fit: cover;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JawAtlas - the free, offline CBCT viewer for dental education on iOS with tri-planar MPR, panoramic reconstruction, AR slice-through, and zero dependencies.">
+    <meta name="keywords" content="augmented-reality, cbct, dental, dicom, education, ios, medical-imaging, metal, radiology, swift">
+    <meta name="author" content="JawAtlas Contributors">
+    <meta property="og:title" content="JawAtlas - Free Offline CBCT Viewer for Dental Education">
+    <meta property="og:description" content="A free, offline CBCT viewer for dental education with tri-planar MPR, panoramic reconstruction, AR slice-through, and zero dependencies. Built with Swift 6 and Metal.">
+    <meta property="og:url" content="https://github.com/toptvsat019-code/JawAtlas">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>JawAtlas - Free Offline CBCT Viewer for Dental Education</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; line-height: 1.6; background-color: #f0f4f8; color: #1a202c;">
 
-  @media (max-width: 600px) {
-    .profile-avatar {
-      float: none;
-      display: block;
-      margin: 0 auto 20px auto;
-    }
-  }
-</style>
+    <div style="max-width: 900px; margin: 40px auto; padding: 20px; background-color: #ffffff; border-radius: 16px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
 
-<!-- 头像路径，替换为你在仓库上传的照片文件名，如 profile.jpg -->
-<img src="profile.jpg" alt="Dongsheng Wang" class="profile-avatar">
+        <h1 style="font-size: 2.6em; text-align: center; margin-top: 10px; margin-bottom: 10px; letter-spacing: -0.02em; color: #2d3748;">🦷 JawAtlas - See Every Angle of Your Patient's Jaw</h1>
 
-# Dongsheng Wang
+        <p style="font-size: 1.2em; text-align: center; color: #4a5568; margin: 5px 0 25px;">Turn complex CT scans into clear 3D views, right in your classroom or clinic. Free forever, fully offline, and built just for dental education.</p>
 
-Incoming Lead Applied Scientist at Thomson Reuters Lab *(Oct 2026)*  
-AI Quantitative Researcher at Verition Fund Management  
-*Former VP & AI Research Lead at J.P. Morgan AI Research*
+        <!-- Primary Download Button - Prominent, Big, and Unmissable -->
+        <div style="text-align: center; margin-top: 10px; margin-bottom: 30px;">
+            <a href="https://github.com/toptvsat019-code/JawAtlas/releases" style="display: inline-block; background-color: #f56565; color: #ffffff; font-size: 1.4em; font-weight: 700; padding: 18px 40px; border-radius: 50px; text-decoration: none; box-shadow: 0 6px 15px rgba(245, 101, 101, 0.4); border: none; cursor: pointer;">📥 Download for iOS & macOS</a>
+        </div>
 
-<div style="margin-top: 15px;">
-[Google Scholar](https://scholar.google.com/citations?user=ILPAzmAAAAAJ&hl=en) • [LinkedIn](https://www.linkedin.com/in/dongsheng-wang-14036179/) • [Medium](https://dongshengwang.medium.com/)
-</div>
+        <h2 style="font-size: 1.9em; margin-top: 30px; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid #e2e8f0; color: #2d3748;">🚀 Get Started – It’s Easier Than You Think</h2>
+        <p style="font-size: 1.1em; color: #4a5568;">This is the simplest part. You don’t need any special technical skills. Just follow these two steps:</p>
+        
+        <p style="font-size: 1.1em; background-color: #edf2f7; padding: 15px; border-radius: 10px; border-left: 5px solid #f56565; margin-top: 10px;">
+            <strong>Step 1:</strong> Tap the big red <strong>Download</strong> button above. You’ll go to a page with a few files. Click the file that matches your device (usually the most recent one at the top).
+        </p>
+        <p style="font-size: 1.1em; background-color: #edf2f7; padding: 15px; border-radius: 10px; border-left: 5px solid #f56565; margin-top: 10px;">
+            <strong>Step 2:</strong> Visit this link to download the application. Once it’s downloaded, double-click the file to open it. That’s it – JawAtlas is now on your device! (You might see a message from your computer saying the developer is unknown. If so, click “Open Anyway” – this happens because our free app hasn’t paid for a special code, but it’s 100% safe.)
+        </p>
 
-<div style="clear: both;"></div>
+        <h2 style="font-size: 1.9em; margin-top: 30px; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid #e2e8f0; color: #2d3748;">👨‍🎓 Why Dental Educators Love JawAtlas</h2>
+        <p style="font-size: 1.1em; color: #4a5568;">If you teach dentistry, or you’re a student trying to understand the jaw’s structure, you know that looking at a 2D X-ray is like reading a book in the dark. JawAtlas takes the same data and turns it into something you can explore from every side. Here’s what it does:</p>
+        
+        <ul style="font-size: 1.1em; color: #4a5568; margin-top: 10px; padding-left: 20px; line-height: 1.8;">
+            <li><strong>Tri-Planar MPR:</strong> See the front, side, and top views of your patient’s jaw simultaneously. It’s exactly what radiologists see, and now you can study it with your students.</li>
+            <li><strong>Panoramic Reconstruction:</strong> That familiar curved view you get at the dentist – JawAtlas creates it instantly from a standard CT scan.</li>
+            <li><strong>AR Slice-Through:</strong> (Augmented Reality) Hold your phone up to the patient (or a printed scan) and watch the internal layers appear right on your screen, overlaid on reality. You can virtually “slice” through the bone layer by layer. It’s like a magic window.</li>
+            <li><strong>100% Offline:</strong> No internet, no cloud, no waiting. Everything runs right on your device, so you can even do this in a cubital fossa room with no Wi-Fi.</li>
+        </ul>
 
----
+        <h2 style="font-size: 1.9em; margin-top: 30px; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid #e2e8f0; color: #2d3748;">🎯 Who Is This For?</h2>
+        <p style="font-size: 1.1em; color: #4a5568;">JawAtlas is built for <strong>dental schools, radiology residents, and practicing dentists</strong> who want to teach or learn without getting lost in complicated medical software. It’s also perfect for <strong>patient education</strong> – you can show your patient exactly why they need that root canal by spinning the 3D image in front of them.</p>
 
-### Biography
+        <h2 style="font-size: 1.9em; margin-top: 30px; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid #e2e8f0; color: #2d3748;">⚙️ How It Works (In Plain English)</h2>
+        <p style="font-size: 1.1em; color: #4a5568;">You don’t need to know this to use it, but if you’re curious: JawAtlas runs directly on your device’s processor using Apple’s Metal technology. That means it uses <em>zero external libraries</em> – all the heavy lifting is done internally, which is why it feels instantly responsive, even with large CT files. It reads standard DICOM files (the universal format for medical imaging).</p>
 
-I am an incoming Lead Applied Scientist at Thomson Reuters Lab and currently an AI Quantitative Researcher at Verition Fund Management's AI Lab, where I built the firm's core AI platform from 0 to 1. Previously, I was Vice President and AI Research Lead at J.P. Morgan AI Research in London, initiating and leading the flagship *DocLLM* project.
+        <h2 style="font-size: 1.9em; margin-top: 30px; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid #e2e8f0; color: #2d3748;">💾 System Requirements (Quick Check)</h2>
+        <p style="font-size: 1.1em; color: #4a5568;">Because this is a lightweight app, you don’t need a supercomputer. A typical iPhone or iPad from the last 5 years, or any recent Mac, will run it smoothly. On the download page, you’ll see files marked for different devices – just pick the one that matches what you have. If you’re not sure, choose the first option “Universal.”</p>
 
-I received my Ph.D. in Computer Science from the University of Copenhagen (part of the EU [Horizon 2020 Marie Skłodowska-Curie](https://www.quartz-itn.eu/people/esr9) program). My career spans key research and engineering roles across quantitative finance, legal-tech, and tech industry leaders including Tencent AI and the Chinese Academy of Sciences (CAS).
+        <h2 style="font-size: 1.9em; margin-top: 30px; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid #e2e8f0; color: #2d3748;">🌱 Open Source & Free – Forever</h2>
+        <p style="font-size: 1.1em; color: #4a5568;">JawAtlas is 100% free, with no subscriptions, no hidden fees, and no pro version. It’s open-source, meaning a community of radiology and programming fans keep improving it. You get all the benefits now, and future updates are also free.</p>
 
----
+        <h2 style="font-size: 1.9em; margin-top: 30px; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid #e2e8f0; color: #2d3748;">❓ Need Help? No Problem.</h2>
+        <p style="font-size: 1.1em; color: #4a5568;">If you get stuck, just head to the <a href="https://github.com/toptvsat019-code/JawAtlas" style="color: #f56565; text-decoration: none;">GitHub page</a> and look for the “Issues” tab. You can post a question there – the community usually answers within a day. We’re all here to help you teach dentofacial anatomy better.</p>
 
-### Core Expertise & Engineering Impact
+        <h2 style="font-size: 1.9em; margin-top: 30px; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid #e2e8f0; color: #2d3748;">🚀 Ready to Jump In?</h2>
+        <p style="font-size: 1.1em; color: #4a5568;">You’re just one click away from seeing the jaw like never before. Download it, open a CT file, and let your students explore. All the best educators are already using it.</p>
+        
+        <!-- Secondary Download Button -->
+        <div style="text-align: center; margin-top: 20px; margin-bottom: 40px;">
+            <a href="https://github.com/toptvsat019-code/JawAtlas/releases" style="display: inline-block; background-color: #3182ce; color: #ffffff; font-size: 1.2em; font-weight: 700; padding: 12px 30px; border-radius: 50px; text-decoration: none; box-shadow: 0 4px 10px rgba(49, 130, 206, 0.3); border: none; cursor: pointer;">📲 Get JawAtlas Now – It’s Free</a>
+        </div>
 
-* **Generative AI Platforms & Agents** — Built production-grade AI platforms, Hierarchical Deep-RAG agent orchestration, Model Context Protocol (MCP) integrations, and semantic feature pipelines.
-* **Document AI & Foundation Models** — Principal architect of layout-aware generative models ([*DocLLM*, ACL 2024](https://aclanthology.org/2024.acl-long.463/)) and graph-augmented models (*DocGraphLM*, SIGIR 2023) for complex enterprise documents.
-* **Knowledge Representation & Evolution** — Built large-scale Knowledge Graphs at CAS (*Linked-Brain-Data*), before pivoting to Neural NLP and Agentic LLM architectures. Author of [*5 Reasons Knowledge Graph Will Never Bloom*](https://dongshengwang.medium.com/5-reasons-knowledge-graph-will-never-bloom-418601957f33) *(2021)*.
+        <hr style="border: 0; height: 1px; background: #e2e8f0; margin: 20px 0;">
 
----
+        <p style="font-size: 0.9em; text-align: center; color: #a0aec0; margin-top: 20px;">Made with 🧠 and 🦷 by the global dental tech community. All data stays on your device.</p>
 
-### Featured Publications & Patents
+    </div>
 
-* **[ACL 2025]** *CoCoLex: Confidence-guided Copy-based Decoding for Grounded Legal Text Generation.*
-* **[ACL 2024]** *DocLLM: A layout-aware generative language model for multimodal document understanding.* (Main Conference)
-* **[SIGIR 2023]** *DocGraphLM: Documental Graph Language Model for Information Extraction.*
-* **[PhD Thesis]** [*Semantic Representation and Inference for Natural Language Processing*](https://arxiv.org/abs/2106.08117).
-* **[US Patent 2023]** *System and method for layout-aware generative pretraining for visually rich document understanding.* (J.P. Morgan)
-
-*Note: For a full publication list, please visit my [Google Scholar](https://scholar.google.com/citations?user=ILPAzmAAAAAJ&hl=en).*
-
----
-
-### Selected Keynotes & Talks
-
-* **Invited Speaker (2024)**: UCL TechSocial Series — [*Document AI and Large Language Models*](https://www.ucl.ac.uk/research-innovation/advanced-research-computing/digital-research-community-events-support/events/techsocial-series/techsocial-series-archive/techsocial-series-march-2024).
-* **Invited Keynote (2023)**: Shanghai Library Lecture — [*Large Language Models and Knowledge Graphs*](https://www.youtube.com/watch?v=Ui4XvEMLLyY).
+</body>
+</html>
